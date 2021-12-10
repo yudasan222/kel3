@@ -1,0 +1,95 @@
+{% extends 'base.html' %} {% block head %}
+<title>Decision Tree Kel 3 UDINUS 11</title>
+{% endblock %} {% block body %}
+<div class="container-contact100">
+  <div class="wrap-contact100">
+    <form class="contact100-form validate-form" method="POST" action="/result">
+      <span class="contact100-form-title"> Prediksi Minat Bidang </span>
+
+      <div class="wrap-input100 validate-input">
+        <span class="label-input100">Jenis Kelamin ?</span>
+        <select name="Jenis_Kelamin" id="" class="input100">
+          <option value="" disabled selected>pilih</option>
+          <option value="0">Laki - Laki</option>
+          <option value="1">Perempuan</option>
+        </select>
+        <span class="focus-input100"></span>
+      </div>
+      <div class="wrap-input100 validate-input">
+        <span class="label-input100">Apakah Suka Berfoto ?</span>
+        <select name="berfoto" id="" class="input100">
+          <option value="" disabled selected>pilih</option>
+          <option value="0">Suka</option>
+          <option value="1">Tidak Suka</option>
+        </select>
+        <span class="focus-input100"></span>
+      </div>
+
+      <div class="wrap-input100 validate-input">
+        <span class="label-input100">Skala suka menggambar ?</span>
+        <input
+          class="input100"
+          type="number"
+          name="menggambar"
+          placeholder="1 - 5"
+        />
+        <span class="focus-input100"></span>
+      </div>
+
+      <div class="wrap-input100 validate-input">
+        <span class="label-input100">Apakah Memiliki github ?</span>
+        <select name="github" id="" class="input100">
+          <option value="" disabled selected>pilih</option>
+          <option value="1">Punya</option>
+          <option value="0">Tidak</option>
+        </select>
+        <span class="focus-input100"></span>
+      </div>
+
+      <div class="wrap-input100 validate-input">
+        <span class="label-input100">Skala Suka Matematika ?</span>
+        <input
+          class="input100"
+          type="number"
+          name="matematik"
+          placeholder="1 - 5"
+        />
+        <span class="focus-input100"></span>
+      </div>
+
+      <div class="wrap-input100 validate-input">
+        <span class="label-input100">Skala Suka Fotografi ?</span>
+        <input
+          class="input100"
+          type="number"
+          name="fotografi"
+          placeholder="1 - 5"
+        />
+        <span class="focus-input100"></span>
+      </div>
+
+      <div class="wrap-input100 validate-input">
+        <span class="label-input100">Apakah Suka Shot Foto Random ?</span>
+        <select name="shot_foto_random" id="" class="input100">
+          <option value="" disabled selected>pilih</option>
+          <option value="1">Suka</option>
+          <option value="0">Tidak SUka</option>
+        </select>
+        <span class="focus-input100"></span>
+      </div>
+
+      <div class="container-contact100-form-btn">
+        <div class="wrap-contact100-form-btn">
+          <div class="contact100-form-bgbtn"></div>
+          <button class="contact100-form-btn">
+            <span>
+              Prediksi Hasil
+              <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}
